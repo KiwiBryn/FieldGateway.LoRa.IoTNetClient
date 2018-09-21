@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rfm9xLoRaDevice", "Rfm9xLoRaDevice\Rfm9xLoRaDevice.csproj", "{EC2FE54B-81B9-444C-9670-7E384475DB2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rfm9xLoRaDeviceClient", "Rfm9xLoRaDeviceClient\Rfm9xLoRaDeviceClient.csproj", "{E96B1FF2-0ED0-4C01-A470-B6DFD83BD3B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC2FE54B-81B9-444C-9670-7E384475DB2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC2FE54B-81B9-444C-9670-7E384475DB2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC2FE54B-81B9-444C-9670-7E384475DB2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC2FE54B-81B9-444C-9670-7E384475DB2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96B1FF2-0ED0-4C01-A470-B6DFD83BD3B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96B1FF2-0ED0-4C01-A470-B6DFD83BD3B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96B1FF2-0ED0-4C01-A470-B6DFD83BD3B7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E96B1FF2-0ED0-4C01-A470-B6DFD83BD3B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96B1FF2-0ED0-4C01-A470-B6DFD83BD3B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96B1FF2-0ED0-4C01-A470-B6DFD83BD3B7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1C3E468-7C13-40AE-B0D2-6E6E143851C0}
+	EndGlobalSection
+EndGlobal
