@@ -23,18 +23,17 @@ namespace devMobile.IoT.NetMF.ISM
    using devMobile.IoT.NetMF.SPI;
    using Microsoft.SPOT;
    using Microsoft.SPOT.Hardware;
-//   using SecretLabs.NETMF.Hardware.Netduino;
 
-   public sealed class Rfm9XDevice
+	public sealed class Rfm9XDevice
    {
       public delegate void EventHandler();
 #if ADDRESSED_MESSAGES_PAYLOAD
-      public delegate void OnDataRecievedHandler(byte[] address, float packetSnr, int packetRssi, int rssi, byte[] data);
+      public delegate void OnDataReceivedHandler(byte[] address, float packetSnr, int packetRssi, int rssi, byte[] data);
       public const byte AddressHeaderLength = 1 ;
       public const byte AddressLengthMinimum = 1 ;
       public const byte AddressLengthMaximum = 15 ;
 #else
-      public delegate void OnDataRecievedHandler(float packetSnr, int packetRssi, int rssi, byte[] data);
+      public delegate void OnDataReceivedHandler(float packetSnr, int packetRssi, int rssi, byte[] data);
 #endif
 
       // Registers from SemTech SX127X Datasheet
@@ -346,7 +345,7 @@ namespace devMobile.IoT.NetMF.ISM
 #if ADDRESSED_MESSAGES_PAYLOAD
       private byte[] DeviceAddress = null ;
 #endif
-      public event OnDataRecievedHandler OnDataReceived = delegate { };
+      public event OnDataReceivedHandler OnDataReceived = delegate { };
       public event EventHandler OnTransmit = delegate { };
 
 
